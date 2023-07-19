@@ -10,9 +10,9 @@ import pandas as pd
 import os
 import datetime
 
-def getrouteclassification():
+def getrouteclassification(path):
     #读取文件夹的内容
-    path=os.path.join('h:',os.sep,'CCFI')
+    #path=os.path.join('h:',os.sep,'CCFI')
     #查看文件夹里所有文件
     docnames=os.listdir(path)
     #拼接完整文件路径

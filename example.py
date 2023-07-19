@@ -71,7 +71,7 @@ weekstartdate=datetime.date(2023,1,1)
 #航线数据
 
 from ccfianalysis import getrouteclassification
-routedata =getrouteclassification()
+routedata =getrouteclassification(path="./CCFI")
 #routedata.info()
 for i in routedata.columns[1:]:
    routedata[i]=routedata[i].apply(lambda x:round(x,2))
